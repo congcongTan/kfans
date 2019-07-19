@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>卡饭儿 - 医院食堂餐饮解决方案</title>
+
+	<link href="../css/all.css" rel="stylesheet">
+
+	<!-- Web Fonts -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,400italic,700,700italic,900,900italic,500italic' rel='stylesheet' type='text/css'> -->
+   	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
+	<!-- Flaticon CSS -->
+	<link href="../plugin/flaticon/flaticon.css" rel="stylesheet">
+	<!-- font-awesome CSS -->
+	<!-- <link href="../css/font-awesome.min.css" rel="stylesheet"> -->
+	<!-- Offcanvas CSS -->
+	<link href="../css/off-canvas.css" rel="stylesheet">
+	<!-- animate CSS -->
+	<link href="../css/animate.css" rel="stylesheet">
+	<!-- language CSS -->
+	<link href="../css/language-select.css" rel="stylesheet">
+	<!-- owl.carousel CSS -->
+	<link href="../plugin/owl.carousel/owl.carousel.css" rel="stylesheet">
+	<!-- magnific-popup -->
+	<link href="../css/magnific-popup.css" rel="stylesheet">
+	<!-- Bootstrap Core CSS -->
+	<!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
+	<!-- Template Core Styles -->
+	<link href="../css/template.css" rel="stylesheet">
+	<!-- Main Menu Styles -->
+	<link href="../css/menu.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="../css/style.css" rel="stylesheet">
+	<!-- Responsive CSS -->
+	<link href="../css/responsive.css" rel="stylesheet">
+
+	<script src="../js/vendor/modernizr-2.8.1.min.js"></script>
+	<!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="../js/vendor/html5shim.js"></script>
+		<script src="../js/vendor/respond.min.js"></script>
+	<![endif]-->
+
+<style>
+.chose{
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	padding: 6px 10px;
+}
+.chose.active{
+	background: #ecf4fe;
+	border: 1px solid #4695f6;
+}
+.chose .right {
+	float: right
+}
+.chose .small {
+	font-size: 0.6rem;
+	color: #CCC;
+}
+
+.number {
+	display: flex
+}
+.number>div {
+	flex: 1;
+	background: url(../img/ball.png) center no-repeat;
+	background-size: 50px;
+	height: 50px;
+	line-height: 50px;
+	color: #FFF;
+}
+</style>
+</head>
+<body>
+
+<div id="app">
+
+	<div id="st-container" class="st-container">
+		<div class="st-pusher">
+			<div class="st-content">
+				<header class="header">
+					<nav class="top-bar">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-4 col-xs-12">
+									<div class="call-to-action">
+										<ul class="list-inline">
+											<li><a href="#"><strong>卡饭儿</strong></a></li>
+											<li><a href="#"><strong>医院食堂餐饮解决方案</strong></a></li>
+										</ul>
+									</div><!-- /.call-to-action -->
+								</div><!-- /.col-sm-6 -->
+
+								<div class="col-sm-4 col-xs-12">
+									<div class="logo text-center">
+										<h1><a href="../index"><img src="../img/logo.png" height="100"></a><span>卡饭儿</span></h1>
+									</div>
+								</div>
+
+								<div class="col-sm-4 hidden-xs">
+									<div class="topbar-right">
+										<div class="lang-support pull-right">
+											<select class="lang-select">
+												<option value="" disabled selected>区域</option>
+												<option value="united-kingdom">广东</option>
+												<option value="france">北京</option>
+												<option value="spain">上海</option>
+												<option value="bangladesh">成都</option>
+											</select>
+										</div>
+
+										<ul class="social-links list-inline pull-right">
+											<li><a href="#"><i class="fa fa-qq"></i></a></li>
+											<li><a href="#"><i class="fa fa-wechat"></i></a></li>
+										</ul>
+									</div><!-- /.social-links -->
+								</div><!-- /.col-sm-6 -->
+							</div><!-- /.row -->
+						</div><!-- /.container -->
+					</nav><!-- /.top-bar -->
+
+					<div class="container mainnav">
+
+						<div class="navbar-header">
+							
+							<div id="search">
+							<button type="button" class="close">×</button>
+							<form>
+								<input type="search" value="" placeholder="输入关键字" />
+								<button type="submit" class="btn btn-primary btn-lg">搜索</button>
+							</form>
+							</div>
+						</div>
+						<nav class="navbar navbar-default" role="navigation">
+							<span class="search-button visible-xs"><a href="#search"><i class="fa fa-search"></i></a></span>
+							
+							<!-- offcanvas-trigger -->
+								<button type="button" class="navbar-toggle collapsed" >
+								  <span class="sr-only">Toggle navigation</span>
+								  <i class="fa fa-bars"></i>
+								</button>
+
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse navbar-collapse">
+
+								<span class="search-button pull-right"><a href="#search"><i class="fa fa-search"></i></a></span>
+
+								<ul class="nav navbar-nav hidden-sm">
+
+									<li class="active"><a href="../index/index.html">首页</a></li>
+
+									<li><a href="../about/index.html">关于</a></li>
+
+									<!-- Services -->
+										<li class="dropdown"><a href="#">产品 <b class="caret"></b></a>
+											<!-- submenu-wrapper -->
+											<div class="submenu-wrapper submenu-wrapper-topbottom">
+												<div class="submenu-inner submenu-inner-topbottom">
+													<ul class="dropdown-menu">
+														<li><a href="#">云IC卡消费系统</a></li>
+														<li><a href="#">微信点餐系统</a></li>
+														<li><a href="#">手持机点餐系统</a></li>
+														<li><a href="#">触摸屏零售系统</a></li>
+														<li><a href="#">手持机收款工具</a></li>
+														<li><a href="#">微信点餐系统</a></li>
+													</ul>
+												</div>
+											</div>
+											<!-- /submenu-wrapper -->
+										</li>
+									<!-- /Services -->
+
+									<li><a href="#">方案</a></li>
+
+									<li><a href="../contact/index.html">联系</a></li>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+								
+						</nav>
+					</div><!-- /.container -->
+				</header>
+
+	<div v-if="page == 0">
+		Loading ...
+	</div>
+
+
+	<div v-if="page == 1">
+
+		<a href="http://update.zzb110.cn/app/index.html"><img src="../img/top.jpg" width="100%"></a>
+
+		<div class="weui-cells__title">
+			<div class="fr">账户余额：{{积分}}积分</div>
+			支持全类型手机速充
+		</div>
+
+		<div class="p15">
+
+			<div :class="`chose${支付 == v.other ? ' active':''}`" @click="时长 = v.longTime; 支付 = v.other" v-for="v in 套餐">
+				<div class="right">{{v.other}}积分</div>
+				<div class="left">充电{{v.longTime}}小时</div>
+			</div>
+
+		</div>
+
+		<div class="p15">
+			<a class="weui-btn weui-btn_block weui-btn_primary"
+			href="javascript:;" @click="获取密码()">支付并获取密码</a>
+		</div>
+
+	</div>
+
+	<div class="tc" v-if="page == 2">
+
+		<br><br><br>
+		<img src="../img/password-img.jpg" width="50%">
+		<br><br>
+
+		请在数据线按键处输入以下密码<br>
+
+		<div class="number p15">
+
+			<div v-for="i in 密码.length">
+				{{密码.substr(i-1, 1)}}
+			</div>
+
+		</div>
+		<br>
+
+		充电剩余时长：<span class="text-danger">{{倒计时显示}}</span>
+
+		<div class="p15">
+			<a class="weui-btn weui-btn_block weui-btn_primary"
+			href="javascript:;" @click="关闭()">关闭</a>
+		</div>
+
+	</div>
+
+				<!-- footer-widget-section start -->
+				<section class="footer-widget-section">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="footer-widget">
+									<h3>关于卡饭儿</h3>
+									<p>
+										卡饭儿是一家专注于餐饮行业信息化的新锐互联网公司，拥有一支来自IBM以及国内知名支付服务商的技术专家团队
+									</p>
+									<br>
+
+									<address>
+									  <strong>13631370017</strong>
+									  <br>
+									  <a href="#">example@yahoo.com</a>
+									  <br>
+									  <br>
+									  <span class="map-marker">广东省广州市什么区<br>什么路几多号123室</span>
+									</address>
+
+									
+								</div><!-- /.footer-widget -->
+							</div><!-- /.col-sm-4 -->
+
+							<div class="col-sm-4">
+								<div class="footer-widget">
+									<h3>网站地图</h3>
+									<div class="row">
+										<div class="col-sm-6">
+											<ul class="quick-links">
+												<li><a href="#../about">关于我们</a></li>
+												<li><a href="#../contact">卡饭儿产品</a></li>
+												<li><a href="#../contact">解决方案</a></li>
+												<li><a href="#../contact">联系我们</a></li>
+											</ul>
+										</div>
+										<div class="col-sm-6">
+											<ul class="quick-links">
+												<li><a href="#">云IC卡消费系统</a></li>
+												<li><a href="#">微信点餐系统</a></li>
+												<li><a href="#">手持机点餐系统</a></li>
+												<li><a href="#">触摸屏零售系统</a></li>
+												<li><a href="#">手持机收款工具</a></li>
+												<li><a href="#">网上商城</a></li>
+											</ul>
+										</div>
+									</div>
+								</div><!-- /.footer-widget -->
+							</div><!-- /.col-md-4 -->
+
+							<div class="col-sm-4">
+								<div class="footer-widget">
+									<h3>联系我们</h3>
+									<p>写下您的邮箱地址，我们将发送产品列表到您的邮箱中。</p>
+
+									<form class="newsletter-form">
+										<div class="form-group">
+											<label class="sr-only" for="InputEmail1">Email address</label>
+											<input type="email" class="form-control" id="InputEmail1" placeholder="您的邮箱地址">
+											<button type="submit" class="btn">Send &nbsp;<i class="fa fa-angle-right"></i></button>
+										</div>
+									</form>		
+									<ul class="social-links list-inline">
+										<li><a class="facebook" href="#"><i class="fa fa-qq"></i></a></li>
+										<li><a class="twitter" href="#"><i class="fa fa-wechat"></i></a></li>
+									</ul>						
+								</div><!-- /.footer-widget -->
+							</div><!-- /.col-md-4 -->
+						</div><!-- /.row -->
+					</div><!-- /.container -->
+				</section><!-- /.cta-section -->
+				<!-- footer-widget-section end -->
+
+				<!-- copyright-section start -->
+				<footer class="copyright-section">
+					<div class="container">
+
+						<div class="copyright-info">
+							<span>Copyright &copy; 2018 kfans All rights reserved.</span>
+						</div>
+					</div><!-- /.container -->
+				</footer>
+				<!-- copyright-section end -->
+			</div> <!-- .st-content -->
+		</div> <!-- .st-pusher -->
+
+		<!-- OFFCANVAS MENU -->
+		<div class="offcanvas-menu offcanvas-effect">
+			<div class="offcanvas-wrap">
+				<div class="off-canvas-header">
+					<button type="button" class="close" aria-hidden="true" data-toggle="offcanvas" id="off-canvas-close-btn">&times;</button>
+				</div>
+				<ul id ="offcanvasMenu" class="list-unstyled visible-xs visible-sm">
+					<li class="active"><a href="../index">首页<span class="sr-only">(current)</span></a></li>
+					<li><a href="../about">关于</a></li>
+					<li>
+						<a href="#">产品</a>
+						<ul>
+							<li>
+								<a href="#">云IC卡消费系统</a>
+							</li>
+							<li>
+								<a href="#">微信点餐系统</a>
+							</li>
+						</ul>
+
+					</li>
+					<li><a href="#../contact">方案</a></li>
+					<li><a href="../contact">联系</a></li>
+				</ul>
+				<div class="offcanvas-widgets hidden-sm hidden-xs">
+					<div id="twitterWidget">
+						<h2>Tweeter feed</h2>						
+						<div class="twitter-widget"></div>
+					</div>
+					<div class="newsletter-widget">
+						<h2>Stay in Touch</h2>
+						<p>Enter your email address to receive news &amp; offers from us</p>
+
+						<form class="newsletter-form">
+							<div class="form-group">
+								<label class="sr-only" for="InputEmail1">Email address</label>
+								<input type="email" class="form-control" id="InputEmail2" placeholder="Your email address">
+								<button type="submit" class="btn">Send &nbsp;<i class="fa fa-angle-right"></i></button>
+							</div>
+						</form>		
+							   				
+					</div><!-- newsletter-widget -->
+				</div>
+
+			</div>
+		</div><!-- .offcanvas-menu -->
+	</div>
+</div>
+
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status">
+			<div class="status-mes"></div>
+		</div>
+	</div>
+
+
+	<script src="../js/all.js"></script>
+	<!-- jQuery -->
+	<!-- <script src="../js/jquery.js"></script> -->
+	<!-- Bootstrap Core JavaScript -->
+	<!-- <script src="../js/bootstrap.min.js"></script> -->
+	<!-- Scrolling Nav JavaScript -->
+	<script src="../js/jquery.easing.min.js"></script>
+	
+	<!-- owl.carousel -->
+	<script src="../plugin/owl.carousel/owl.carousel.min.js"></script>
+	<!-- Magnific-popup -->
+	<script src="../js/jquery.magnific-popup.min.js"></script>
+	<!-- Offcanvas Menu -->
+	<script src="../js/hippo-offcanvas.js"></script>
+	<!-- stellar -->
+	<script src="../js/jquery.stellar.js"></script>
+	<!-- classie -->
+	<script src="../js/classie.js"></script>
+	<!-- sticky kit -->
+	<script src="../js/jquery.sticky-kit.min.js"></script>
+	<!-- language select -->
+	<script src="../js/selectFx.js"></script>
+	<!-- Twitter feed -->
+	<script src="../js/twitterFetcher_min.js"></script>
+	<!-- Youtube Video-player -->
+	<script src="../js/jquery.mb.YTPlayer.js"></script>
+	<!-- Custom Script -->
+	<script src="../js/scripts.js"></script>
+
+<script>
+var app = new Vue({
+	el: '#app',
+	data:{
+
+		loading: 1,
+
+		a: {},
+
+		page: 0,
+		客户端: '',
+		积分: Number(LS.积分),
+		套餐: [],
+		时长: 0,
+		支付: 0,
+		// 单号: '',
+		密码: '00000',
+		// 倒计时: 0,
+		倒计时显示: '00:00:00'
+	},
+	methods:{
+		testfunction: function(val){
+
+			_this = this
+
+		},
+
+		获取密码: function(){
+
+			var _this = this
+
+			// console.log('支付并获取密码' + this.pay)
+			// this.page = 2
+
+/*			if(this.倒计时 != 0 && this.密码 != '00000'){
+
+				this.page = 2
+				return
+			}*/
+
+/*			if(this.支付 == 0){
+				alert('请选择套餐')
+				return
+			}*/
+
+			if( (this.支付 - this.积分) > 0 ){
+
+				var payMoney = ( (this.支付 * 10) - (this.积分 * 10 ) ) / 10
+
+				if(confirm('积分不足，需要充值' + payMoney + '积分')){
+
+					var data = {
+    "reqHead":{
+        "clientType":"1",
+        "appVersion":"1.0",
+        "osVersion":"安卓4.2.1",
+        "imei":"设备号",
+        "mobileModel":"S1",
+        "mobileManufacturer":"小米",
+        "identificationCode":"1212312",
+        "lat":"1",
+        "lng":"1",
+        "format":"json",
+        "version":"1.0",
+        "sign":"UCR1fIQ9lyUCR1fIQ9lyUCR1fIQ9lyUCR1y"
+    },
+    "reqBody":{
+        "memberId": LS.memberId,
+        "amount": payMoney,
+        "openId": LS.openId
+    }
+}
+
+					$.ajax({
+						type: 'POST',
+						url: api + 'zzb/app/h5WechatPurchase/interface',
+						data: JSON.stringify(data),
+						dataType: 'json',
+						success: function(re){
+							if(re.rspHead.retCode == '1'){
+								_this.微信支付(re.rspBody.payData)
+							}
+						}
+					})
+
+				}
+
+			}else{
+
+				//够积分
+				// console.log('积分够啦')
+
+				var data = {
+    "reqHead":{
+        "clientType":"1",
+        "appVersion":"1.0",
+        "osVersion":"安卓4.2.1",
+        "imei":"设备号",
+        "mobileModel":"S1",
+        "mobileManufacturer":"小米",
+        "identificationCode":"1212312",
+        "lat":"1",
+        "lng":"1",
+        "format":"json",
+        "version":"1.0",
+        "sign":"AF589D24291C386A925DF1430AFB38B7"
+    },
+    "reqBody":{
+        "sn":LS.线号,
+        "longTime":this.时长,
+        "memberId":LS.memberId,
+        "changeIntegral":this.支付
+    }
+}
+
+				$.ajax({
+					type: 'POST',
+					url: api + 'zzb/app/getLinePassword/interface',
+					data: JSON.stringify(data),
+					dataType: 'json',
+					success: function(re){
+						if(re.rspHead.retCode == '1'){
+
+							_this.积分 = LS.积分 = ( (_this.积分 * 10) - (_this.支付 * 10) ) / 10
+							_this.密码 = re.rspBody.password
+							_this.倒计时 = re.rspBody.surplusTime
+
+							_this.倒计时运行 = setInterval( "_this.倒计时时钟()", 1000 )
+
+							_this.page = 2
+						}else{
+							alert(re.rspHead.retMsg)
+						}
+					}
+				})
+
+			}
+
+		},
+		倒计时时钟: function(){
+
+			if(this.倒计时 > 0){
+				this.倒计时--
+			}else{
+				clearInterval(this.倒计时运行)
+			}
+
+
+			var hh = Math.floor(this.倒计时 / (60 * 60))
+			var modulo = this.倒计时 % (60 * 60)
+
+			var mm = Math.floor(modulo / 60)
+			var modulo = this.倒计时 % 60
+
+			var ss = Math.floor(modulo % 60)
+
+
+			this.倒计时显示 = (Array(2).join(0) + hh).slice(-2)
+			+ ':' + (Array(2).join(0) + mm).slice(-2)
+			+ ':' + (Array(2).join(0) + ss).slice(-2)
+
+
+		},
+		获取套餐: function(){
+
+			//套餐
+			var data = {
+    "reqHead":{
+        "clientType":"1",
+        "appVersion":"1.0",
+        "osVersion":"安卓4.2.1",
+        "imei":"设备号",
+        "mobileModel":"S1",
+        "mobileManufacturer":"小米",
+        "identificationCode":"1212312",
+        "lat":"1",
+        "lng":"1",
+        "format":"json",
+        "version":"1.0",
+        "sign":"UCR1fIQ9lyUCR1fIQ9lyUCR1fIQ9lyUCR1y"
+    },
+    "reqBody":{
+        "sn": LS.线号,
+        "memberId": LS.memberId
+    }
+}
+
+			$.ajax({
+				type: 'POST',
+				url: api + 'zzb/app/lineInfo/interface',
+				data: JSON.stringify(data),
+				dataType: 'json',
+				success: function(re){
+					if(re.rspHead.retCode == '1'){
+
+						LS.removeItem('套餐')
+						LS.套餐 = re.rspBody.priceJson
+						_this.读套餐()
+
+						//如果还有上次
+						if(re.rspBody.surplusTime > 0){
+
+							_this.密码 = re.rspBody.password
+							_this.倒计时 = re.rspBody.surplusTime
+
+							_this.倒计时运行 = setInterval( "_this.倒计时时钟()", 1000 )
+
+							_this.page = 2
+						}
+
+					}else{
+						alert(re.rspHead.retMsg);
+					}
+				}
+			})
+
+		},
+		读套餐: function(){
+
+			//第一次加载会是空下面会出错
+			if(LS.套餐 == undefined)return
+
+			//读套餐
+			this.套餐 = JSON.parse(LS.套餐)
+
+			//选中第一个套餐
+			this.时长 = this.套餐[0].longTime
+			this.支付 = this.套餐[0].other
+
+		},
+		微信支付(json){
+
+			var _this = this
+
+			// console.log(json)
+			// return
+
+			// this.单号 = json.orderNo
+
+			WeixinJSBridge.invoke(
+				'getBrandWCPayRequest',
+				{
+					"appId":		json.appid,
+					"timeStamp":	json.timestamp,
+					"nonceStr":		json.noncestr,
+					"package":		json.package,
+					"signType":		json.signType,
+					"paySign":		json.sign
+				},
+				function(re){
+
+					// alert(re.err_msg)
+
+					if(re.err_msg == "get_brand_wcpay_request:ok") {
+
+						_this.检查支付状态循环 = setInterval("_this.检查支付状态('" + json.orderNo + "')", 1000)
+						_this.检查支付状态次数 = 30
+
+					}else{
+
+						this.loading = 0
+					}
+				}
+			)
+		},
+		检查支付状态: function(单号){
+
+			var _this = this
+
+			//停止检查 - 次数够
+			if(this.检查支付状态次数 == 0){
+				
+				clearInterval(this.检查支付状态循环)
+				this.loading = 0
+
+				return
+			}
+
+			this.检查支付状态次数--
+
+			this.loading = 1
+
+			var data = {
+    "reqHead":{
+        "clientType":"1",
+        "appVersion":"1.0",
+        "osVersion":"安卓4.2.1",
+        "imei":"设备号",
+        "mobileModel":"S1",
+        "mobileManufacturer":"小米",
+        "identificationCode":"1212312",
+        "lat":"1",
+        "lng":"1",
+        "format":"json",
+        "version":"1.0",
+        "sign":"UCR1fIQ9lyUCR1fIQ9lyUCR1fIQ9lyUCR1y"
+    },
+    "reqBody":{
+        "orderNo": 单号
+    }
+}
+
+			$.ajax({
+				type: 'POST',
+				url: api + 'zzb/app/payResult/interface',
+				data: JSON.stringify(data),
+				dataType: 'json',
+				success: function(re){
+					console.log(re)
+
+					if(re.rspBody.resutl == 1){
+
+						//停止检查
+						clearInterval(_this.检查支付状态循环)
+						_this.loading = 0
+
+						//更新本地积分
+						_this.积分 = _this.支付
+
+						//再次发起支付
+						_this.获取密码()
+					}
+
+				}
+			})
+
+		},
+		关闭: function(){
+
+			WeixinJSBridge.invoke('closeWindow',{},function(res){})
+
+		}
+	},
+	created(){
+
+		var ua = navigator.userAgent
+		// alert(ua)
+
+		if(ua.indexOf('MicroMessenger') != -1){
+			this.客户端 = '微信'
+		}
+		if(ua.indexOf('Alipay') != -1){
+			this.客户端 = '支付宝'
+		}
+
+		if(this.客户端 == ''){
+			alert('请在中证宝APP、微信、支付宝扫码使用')
+			return
+		}
+
+		if(this.客户端 == '支付宝'){
+			alert('支付宝暂未开通')
+			return
+		}
+
+		// return
+
+		var _this = this
+
+		//清缓存
+		if(getUrl('clean') != undefined){
+			LS.removeItem('memberId')
+			LS.removeItem('openId')
+			LS.removeItem('userId')
+			LS.removeItem('套餐')
+			LS.removeItem('积分')
+		}
+
+		//线号
+		if(getUrl('line_sn') != undefined){
+			LS.线号 = getUrl('line_sn')
+		}
+
+		//未登录
+		if(LS.openId == undefined){
+
+			//step1 无code
+			if(getUrl('code') == null){
+				// console.log(location.href)
+				var url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxff6f6dabda86aec6&redirect_uri=' + encodeURIComponent(location.href) + '&response_type=code&scope=snsapi_base#wechat_redirect'
+				// console.log(url)
+				location.href = url
+				return
+			}
+
+		}
+
+
+		var body = {
+			source: 2,
+			paramId: '',
+			code: ''
+		}
+		if(LS.openId != undefined){
+
+			//有openid 用 openid
+			body.paramId = LS.openId
+
+		}else if(getUrl('code') != null){
+
+			//无openid 用 code
+			body.code = getUrl('code')
+
+		}
+
+
+		//用户信息
+		var data = {
+    "reqHead":{
+        "clientType":"1",
+        "appVersion":"1.0",
+        "osVersion":"安卓4.2.1",
+        "imei":"设备号",
+        "mobileModel":"S1",
+        "mobileManufacturer":"小米",
+        "identificationCode":"1212312",
+        "lat":"1",
+        "lng":"1",
+        "format":"json",
+        "version":"1.0",
+        "sign":"UCR1fIQ9lyUCR1fIQ9lyUCR1fIQ9lyUCR1y"
+    },
+    "reqBody": body
+}
+
+		$.ajax({
+			type: 'POST',
+			url: api + 'zzb/app/h5UserInfo/interface',
+			data: JSON.stringify(data),
+			dataType: 'json',
+			success: function(re){
+				if(re.rspHead.retCode == '1'){
+
+					LS.积分		= re.rspBody.integral
+					LS.openId	= re.rspBody.openId
+					LS.memberId	= re.rspBody.memberId
+					LS.userId	= re.rspBody.userId
+
+					//更新积分
+					_this.积分 = Number(LS.积分)
+
+					//获取套餐
+					_this.获取套餐()
+
+				}
+			}
+		})
+
+	},
+	mounted(){
+		var _this = this
+
+		console.log('vue is ready')
+
+
+		this.读套餐()
+
+		this.loading = 0
+
+	}
+})
+</script>
+</body>
+</html>
