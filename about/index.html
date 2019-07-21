@@ -77,9 +77,19 @@
 
 								<div class="col-sm-4 hidden-xs">
 									<div class="topbar-right">
+										<div class="lang-support pull-right">
+											<select class="lang-select">
+												<option value="" disabled selected>区域</option>
+												<option value="united-kingdom">广东</option>
+												<option value="france">北京</option>
+												<option value="spain">上海</option>
+												<option value="bangladesh">成都</option>
+											</select>
+										</div>
+
 										<ul class="social-links list-inline pull-right">
-											<li><a href="http://wpa.qq.com/msgrd?v=3&uin=57425133&site=卡饭儿网站"><i class="fa fa-qq"></i></a></li>
-											<li><a href="javascript:weixin()"><i class="fa fa-wechat"></i></a></li>
+											<li><a href="#"><i class="fa fa-qq"></i></a></li>
+											<li><a href="#"><i class="fa fa-wechat"></i></a></li>
 										</ul>
 									</div><!-- /.social-links -->
 								</div><!-- /.col-sm-6 -->
@@ -143,8 +153,8 @@
 										<div class="submenu-wrapper submenu-wrapper-topbottom">
 											<div class="submenu-inner submenu-inner-topbottom">
 												<ul class="dropdown-menu">
-													<li><a href="../plan/hospital.html">医院食堂</a></li>
-													<li><a href="../plan/business.html">校企食堂</a></li>
+													<li><a href="#">医院食堂</a></li>
+													<li><a href="#">校企食堂</a></li>
 												</ul>
 											</div>
 										</div>
@@ -157,7 +167,6 @@
 								
 						</nav>
 					</div><!-- /.container -->
-
 				</header>
 
 	<div id="main-carousel" class="carousel slide hero-slide" data-ride="carousel">
@@ -551,6 +560,17 @@
 									<p>
 										卡饭儿是一家专注于餐饮行业信息化的新锐互联网公司，拥有一支来自IBM以及国内知名支付服务商的技术专家团队
 									</p>
+									<br>
+
+									<address>
+									  <strong>13631370017</strong>
+									  <br>
+									  <a href="mailto:kfans1cn@163.com">kfans1cn@163.com</a>
+									  <br>
+									  <br>
+									  <span class="map-marker">广州市黄埔区<br>科景路5号120室</span>
+									</address>
+
 									
 								</div><!-- /.footer-widget -->
 							</div><!-- /.col-sm-4 -->
@@ -561,20 +581,20 @@
 									<div class="row">
 										<div class="col-sm-6">
 											<ul class="quick-links">
-												<li><a href="../index/index.html#关于">关于我们</a></li>
-												<li><a href="#../product">卡饭儿产品</a></li>
-												<li><a href="../plan">解决方案</a></li>
-												<li><a href="../contact">联系我们</a></li>
+												<li><a href="#../about">关于我们</a></li>
+												<li><a href="#../contact">卡饭儿产品</a></li>
+												<li><a href="#../contact">解决方案</a></li>
+												<li><a href="#../contact">联系我们</a></li>
 											</ul>
 										</div>
 										<div class="col-sm-6">
 											<ul class="quick-links">
-												<li><a href="javascript:;">云IC卡消费系统</a></li>
-												<li><a href="javascript:;">微信点餐系统</a></li>
-												<li><a href="javascript:;">手持机点餐系统</a></li>
-												<li><a href="javascript:;">触摸屏零售系统</a></li>
-												<li><a href="javascript:;">手持机收款工具</a></li>
-												<li><a href="javascript:;">网上商城</a></li>
+												<li><a href="#">云IC卡消费系统</a></li>
+												<li><a href="#">微信点餐系统</a></li>
+												<li><a href="#">手持机点餐系统</a></li>
+												<li><a href="#">触摸屏零售系统</a></li>
+												<li><a href="#">手持机收款工具</a></li>
+												<li><a href="#">网上商城</a></li>
 											</ul>
 										</div>
 									</div>
@@ -584,16 +604,18 @@
 							<div class="col-sm-4">
 								<div class="footer-widget">
 									<h3>联系我们</h3>
+									<p>写下您的邮箱地址，我们将发送产品列表到您的邮箱中。</p>
 
-									<address>
-										<strong>13631370017</strong><br>
-										<a href="mailto:kfans1cn@163.com">kfans1cn@163.com</a><br>
-										<span class="map-marker">广州市黄埔区科景路5号120室</span>
-									</address>
-	
+									<form class="newsletter-form">
+										<div class="form-group">
+											<label class="sr-only" for="InputEmail1">Email address</label>
+											<input type="email" class="form-control" id="InputEmail1" placeholder="您的邮箱地址">
+											<button type="submit" class="btn">Send &nbsp;<i class="fa fa-angle-right"></i></button>
+										</div>
+									</form>		
 									<ul class="social-links list-inline">
-										<li><a href="http://wpa.qq.com/msgrd?v=3&uin=57425133&site=卡饭儿网站"><i class="fa fa-qq"></i></a></li>
-										<li><a href="javascript:weixin()"><i class="fa fa-wechat"></i></a></li>
+										<li><a class="facebook" href="#"><i class="fa fa-qq"></i></a></li>
+										<li><a class="twitter" href="#"><i class="fa fa-wechat"></i></a></li>
 									</ul>						
 								</div><!-- /.footer-widget -->
 							</div><!-- /.col-md-4 -->
@@ -683,31 +705,6 @@
 			<div class="status-mes"></div>
 		</div>
 	</div>
-
-<div class="modal fade toast">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-				<h4 class="modal-title"></h4>
-			</div>
-			<div class="modal-body"></div>
-			<div class="modal-footer"></div>
-		</div>
-	</div>
-</div>
-
-<script type="text/template" id="tpl_weixin">
-	<div class="text-center">
-		<img src="../img/qr.jpg" width="100%"><br>
-	</div>
-</script>
-<script>
-function weixin(){
-	toast.alert({title:'微信扫码', body: $('#tpl_weixin').html(), size:'sm'});
-	$('.toast .modal-footer').html('<a class="btn btn-primary" data-dismiss="modal">确定</a>');
-}
-</script>
 
 
 	<script src="../js/all.js"></script>
