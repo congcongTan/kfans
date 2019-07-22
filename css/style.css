@@ -286,10 +286,21 @@ OUR SERVICES SECTION
 ABOUT US WRAP
 --------------------------------------------------------------------- */
 .about-us-wrap {
-  background: url(../img/capbilities.png)no-repeat;
+  /*background: url(../img/index/product.jpg)no-repeat;*/
   background-size: 50%;
-  background-position: right 85px;
+  
 }
+
+/*@media(max-width:767px) {
+  .about-us-wrap {
+    background-position: top;
+  }
+}
+@media(min-width:768px) {
+  .about-us-wrap {
+    background-position: left;
+  }
+}*/
 
 .about-us-wrap .about-us-content h3 {
   margin-bottom: 25px;

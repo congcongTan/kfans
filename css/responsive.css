@@ -42,7 +42,7 @@
 
   .about-us-wrap {
     background-size: 100%;
-    background-position: right 785px;
+    /*background-position: left 785px;*/
   }
 
   .about-us-wrap .about-us-content {
@@ -129,7 +129,7 @@
   }
 
   .about-us-wrap {
-    background-position: center bottom;
+    background-position: center top 200px;
   }
 
   .about-us-wrap .about-us-content.capabilities {
